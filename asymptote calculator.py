@@ -40,6 +40,10 @@ def main(args):
 
 if __name__=="__main__":
     args = sys.argv
+    shell = False
     if len(args)==1:
         args.append(input("Equation : y = "))
+        shell = True
     main(args)
+    if shell:
+        input()
